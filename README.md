@@ -14,13 +14,25 @@ Data
 
 We used the mammal population densities dataset [^1] compiled by Tucker et al. for a recent article [^2] published in the journal Ecography. The authors concluded that mammal populations densities were higher in urban areas, but also noted that this may be due to related factors, e.g. humans choosing to build in areas with abundant natural resources. The dataset includes the Landsat Normalized Difference Vegetation Index (NDVI), a possible environmental predictor of species density.
 
+The features available in the dataset are: 
+* Natural predictors
+  * Normalized Difference Vegetation Index (NDVI)
+  * Mass (g)
+* Anthropogenic predictors
+  * Human Footprint Index
+  * Night time lights
+  * Human population density
+  * Crop land
+  * Pasture
+  * Accessibility
+
 Exploratory data analysis
 --------------------------
 
 After some initial exploration, we selected a subset of 6 species with sufficiently many data points and similar habitats: Axis axis (chital deer), Loxodonta africana (African elephant), Panthera pardus (leopard), Panthera tigris (tiger), Sus scrofa (wild boar), and Syncerus caffer (African buffalo),
 for a total of 1057 data points. Paired plots across the available features did not immediately reveal any strong trends, so we tested a variety of models.
 
-
+![eda](https://github.com/eordog/Species-distribution/assets/97986688/8548f4a8-fc80-4041-9693-f68fd85b9e7c)
 
 
 Regression Models
