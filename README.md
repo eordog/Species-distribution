@@ -49,7 +49,7 @@ NDVI, Human Footprint, and Species Richness (all at the
 1-degree level of granularity) as the predictive features, as
 well as log transforms of both the independent and depen-
 dent variables, and a quadratic regression. None of these
-models were significantly stronger than the baseline
+models were significantly stronger than the baseline.
 
 ### k-nearest neighbors ###
 
@@ -60,7 +60,7 @@ The k-nearest neighbors regressor predicts density by averaging the k closest da
 
 ### XGBoost regressor ###
 
-The XGBoost regressor model is a gradient-boosting ensemble model that starts with a decision tree and continually improves the model by traning on the errors of the predictions. After hyperparameter tuning, the best XGBoost model had a learning rate of 0.5, max depth of 6, 500 estimators, and colsample_bytree of 0.7.
+The XGBoost regressor model is a gradient-boosting ensemble model that starts with a decision tree and continually improves the model by traning on the errors of the predictions. After hyperparameter tuning, the best XGBoost model had a learning rate of 0.5, max depth of 6, colsample_bytree of 0.7, and 500 estimators.
 
 ### Random forest regressor ###
 
